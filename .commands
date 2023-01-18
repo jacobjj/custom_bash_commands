@@ -1,0 +1,15 @@
+# Custom scripts
+# Create new multiplex terminal
+tmns() {
+	tmux new -t $1
+}
+
+# List all opened terminals.
+tmls(){
+	tmux ls
+}
+
+# attach to a particular mutliplex.
+tmat(){
+	tmux a -t $1
+}
